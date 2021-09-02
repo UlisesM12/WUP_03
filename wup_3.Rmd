@@ -35,9 +35,17 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
-## Numerical Summarys 
+The fancy box plot reinforces the previous box plot shows the median of the average use of alcohol is greater for students sitting in the back compared to students sitting in the front seat. The fancy box plot's notches show how big the standard deviation and 
 
+## Numerical Summarys
+
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+To reinforce the....The students sitting in the front on average consume alcohol 1.8 times a week, the middle consume on average 3.3 times a week, and the back consumes on average 8.5 times a week. The standard deviation for the front is 3.8, middle is 6.2, and the last is 12.5, reinforcing the second box plot with the students siting further from the front the greater the consumption of alcohol is.   
 ## Inferential Tests
+
+
 
 ## Conclusions
 
