@@ -55,8 +55,9 @@ We got a low P value for the anova test which means we are not done yet. The P v
 ```{r}
 plot(TukeyHSD(model1))
 ```
+  
 If you look at the front to the back the mean level is different the back is drinking around 12 to 4 drinks more than the front is. The back is drinking around 10 to 3 drinks more than the middle. It doesn't look like there is any difference between the middle and the front because 0 is inside the confidence level of the difference. 
 
 ## Conclusions
 
-
+We were given that the problem was a numerical~categorical problem and we uploaded the helper file. We looked at each plot and figured out which row drank more than the others. We figured out the back row drank more and the conclusion came from the Tukey HSD test. 
