@@ -35,7 +35,7 @@ basicCN + geom_boxplot()
 basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
 ```
 
-The fancy box plot reinforces the previous box plot shows the median of the average use of alcohol is greater for students sitting in the back compared to students sitting in the front seat. The fancy box plot's notches show how big the standard deviation and 
+The fancy box plot reinforces the previous box plot shows the median of the average use of alcohol is greater for students sitting in the back compared to students sitting in the front seat. The fancy box plot's notches show how big the standard deviation is for students sitting in the back drink more than the other students.  
 
 ## Numerical Summarys
 
