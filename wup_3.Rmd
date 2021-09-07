@@ -42,10 +42,20 @@ The fancy box plot reinforces the previous box plot shows the median of the aver
 ```{r}
 favstats(alcohol~Seat,data=ucdavis1)
 ```
-To reinforce the....The students sitting in the front on average consume alcohol 1.8 times a week, the middle consume on average 3.3 times a week, and the back consumes on average 8.5 times a week. The standard deviation for the front is 3.8, middle is 6.2, and the last is 12.5, reinforcing the second box plot with the students siting further from the front the greater the consumption of alcohol is.   
+To reinforce the....The students sitting in the front on average consume alcohol 1.8 times a week, the middle consume on average 3.3 times a week, and the back consumes on average 8.5 times a week. The standard deviation for the front is 3.8, middle is 6.2, and the last is 12.5, reinforcing the second box plot with the students siting further from the front the greater the consumption of alcohol is.
+
 ## Inferential Tests
 
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+We got a low P value for the anova test which means we are not done yet. The P value means that there are at least two rows where the alcohol consumption is significantly different between them. 
 
+```{r}
+plot(TukeyHSD(model1))
+```
+If you look at the front to the back the mean level is different the back is drinking around 12 to 4 drinks more than the front is. The back is drinking around 10 to 3 drinks more than the middle. It doesn't look like there is any difference between the middle and the front because 0 is inside the confidence level of the difference. 
 
 ## Conclusions
 
